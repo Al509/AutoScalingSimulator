@@ -10,6 +10,6 @@ package simulator
 
 object Application {
   def main(args: Array[String]) {
-    println("Hello, world!")
+    WindowUtilities.openInJFrame(new Engine(), 200, 200)
   }
 }
