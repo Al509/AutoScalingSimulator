@@ -6,14 +6,14 @@ import java.awt.event.{ActionEvent, ActionListener}
 
 class Engine extends JPanel with ActionListener{
 
-  var timer = new Timer(1000, this);
-  timer.start();
+  var timer = new Timer(1000, this)
+  timer.start()
 
   var flag: Boolean = true
 
   override def paint(g : Graphics) {
     super.paint(g)
-    val g2d = g;
+    val g2d = g
     if(flag) {
       g2d.drawLine(0,0,100,100)
     } else {
