@@ -10,7 +10,6 @@ import java.util.EmptyStackException
 class MainTest extends FunSuite {
 
   test("pop is invoked on a non-empty stack") {
-
     val stack = new util.Stack[Int]
     stack.push(1)
     stack.push(2)
@@ -21,7 +20,6 @@ class MainTest extends FunSuite {
   }
 
   test("pop is invoked on an empty stack") {
-
     val emptyStack = new util.Stack[Int]
     intercept[EmptyStackException] {
       emptyStack.pop()

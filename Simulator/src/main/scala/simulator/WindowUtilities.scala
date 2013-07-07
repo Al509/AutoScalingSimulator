@@ -17,9 +17,9 @@ object WindowUtilities {
 
   def setNativeLookAndFeel() {
     try {
-      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName)
     } catch {
-      case e: Exception => System.out.println("Error setting native LAF: " + e);
+      case e: Exception => System.out.println("Error setting native LAF: " + e)
     }
   }
 
@@ -32,14 +32,14 @@ object WindowUtilities {
                    height: Int,
                    title: String,
                    bgColor: Color): JFrame = {
-    val frame = new JFrame(title);
-    frame.setBackground(bgColor);
-    content.setBackground(bgColor);
-    frame.setSize(width, height);
-    frame.setContentPane(content);
-    frame.addWindowListener(new ExitListener());
-    frame.setVisible(true);
-    return (frame);
+    val frame = new JFrame(title)
+    frame.setBackground(bgColor)
+    content.setBackground(bgColor)
+    frame.setSize(width, height)
+    frame.setContentPane(content)
+    frame.addWindowListener(new ExitListener())
+    frame.setVisible(true)
+    return (frame)
   }
 
   /** Uses Color.white as the background color. */
@@ -48,7 +48,7 @@ object WindowUtilities {
     width : Int,
     height : Int,
     title : String) : JFrame = {
-    return(openInJFrame(content, width, height, title, Color.white));
+    return(openInJFrame(content, width, height, title, Color.white))
   }
 
   /** Uses Color.white as the background color, and the
@@ -60,6 +60,6 @@ object WindowUtilities {
     height: Int) : JFrame = {
     return(openInJFrame(content, width, height,
       content.getClass().getName(),
-      Color.white));
+      Color.white))
   }
 }
