@@ -1,12 +1,5 @@
 package simulator;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Al
- * Date: 6/8/13
- * Time: 12:26 PM
- * To change this template use File | Settings | File Templates.
- */
 import javax.swing.*;
 import java.awt.*;
 
